@@ -35,6 +35,7 @@ function clearElements() {
 
 resetButton = document.getElementById("Reset");
 resetButton.onClick = clearElements();
+
 //resetButton.addEventListener("click", clearElements);
 // call function every 0.5 second
 setInterval(costCalculation, 500);

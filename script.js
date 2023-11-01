@@ -8,11 +8,7 @@ function costCalculation() {
 
   //check if date has been entered
   if (!isNaN(checkin) && !isNaN(checkout)) {
-    //let daysDifference = (checkout - checkin) / (1000 * 3600 * 24) + 1;
-
     //set days value
-
-    //document.getElementById("numberOfDays").value = daysDifference;
     document.getElementById("numberOfDays").value = checkin.diff(checkout);
     let numOfAdults = document.getElementById("dropdown").value;
 
@@ -24,7 +20,6 @@ function costCalculation() {
     document.getElementById("numberOfDays").value = "";
     document.getElementById("cost").value = "";
   }
-  console.log("hey");
 }
 
 function clearElements() {
@@ -37,10 +32,23 @@ function clearElements() {
   });
 }
 
-resetButton = document.getElementById("Reset");
-resetButton.onClick = clearElements();
+function hey() {
+  console.log("hey");
+}
+
+let datepicker = document.getElementById("checkoutdate");
+
+//datepicker.addEventListener("click", costCalculation());
+
+let button1 = document.getElementById("heyy");
+button1.onclick = console.log("jkhg");
+
+console.log("sfjhjksdjkg");
+console.log(button1);
+// buttt.addEventListener("click", hey());
+//resetButton = document.getElementById("Reset");
+//resetButton.onClick = clearElements();
 
 //resetButton.addEventListener("click", clearElements);
-// call function every 0.5 second
-setInterval(costCalculation, 500);
-console.log("hello world");
+// //call function every 0.5 second
+// setInterval(costCalculation, 500);

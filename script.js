@@ -36,19 +36,12 @@ function hey() {
   console.log("hey");
 }
 
-let datepicker = document.getElementById("checkoutdate");
+let checkoutDatepicker = document.getElementById("checkoutdate");
 
-//datepicker.addEventListener("click", costCalculation());
+datepicker.addEventListener("click", costCalculation());
 
 let button1 = document.getElementById("heyy");
 button1.onclick = console.log("jkhg");
 
 console.log("sfjhjksdjkg");
 console.log(button1);
-// buttt.addEventListener("click", hey());
-//resetButton = document.getElementById("Reset");
-//resetButton.onClick = clearElements();
-
-//resetButton.addEventListener("click", clearElements);
-// //call function every 0.5 second
-// setInterval(costCalculation, 500);

@@ -9,12 +9,15 @@ function costCalculation() {
   //check if date has been entered
   if (!isNaN(checkin) && !isNaN(checkout)) {
     //set days value
-    document.getElementById("numberOfDays").value = checkin.diff(checkout);
+    document.getElementById("numberOfDays").value = checkout.diff(
+      checkin,
+      "days"
+    );
     let numOfAdults = document.getElementById("dropdown").value;
 
     // set cost value
     document.getElementById("cost").value =
-      numOfAdults * checkin.diff(checkout) * 150 + "$";
+      numOfAdults * checkout.diff(checkin, "days") * 150 + "$";
   } else {
     //clear
     document.getElementById("numberOfDays").value = "";
@@ -36,12 +39,4 @@ function hey() {
   console.log("hey");
 }
 
-let checkoutDatepicker = document.getElementById("checkoutdate");
-
-datepicker.addEventListener("click", costCalculation());
-
-let button1 = document.getElementById("heyy");
-button1.onclick = console.log("jkhg");
-
-console.log("sfjhjksdjkg");
-console.log(button1);
+document.getElementById("checkoutdate").addEventListener("click", hey);

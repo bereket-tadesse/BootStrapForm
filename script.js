@@ -1,3 +1,12 @@
+// const testbutton = document.getElementById("b");
+
+// //testbutton.addEventListener(onclick, hey());
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   alert("document loaded!");
+//   testbutton.addEventListener("onclick", hey());
+// });
+
 function costCalculation() {
   // checkin and checkout date values
   console.log("working");
@@ -36,11 +45,6 @@ function clearElements() {
   });
 }
 
-function hey() {
-  console.log("hey");
-}
-
-document.getElementById("shit").addEventListener(onclick, hey());
 document
   .getElementById("checkindate")
   .addEventListener("change", costCalculation());
@@ -48,3 +52,9 @@ document
 document
   .getElementById("checkoutdate")
   .addEventListener("change", costCalculation());
+
+const button = document.getElementById("shit");
+button.addEventListener("click", hey());
+function hey() {
+  console.log("hey");
+}

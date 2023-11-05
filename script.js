@@ -1,3 +1,6 @@
+/**
+ * Cost calculating funciton
+ */
 function costCalculation() {
   // checkin and checkout date values
   let checkinString = new Date(document.getElementById("checkindate").value);
@@ -25,16 +28,7 @@ function costCalculation() {
   }
 }
 
-function clearElements() {
-  let form = document.getElementsByClassName("row");
-
-  let inputElements = form.querySelectorAll("input");
-
-  inputElements.forEach((element) => {
-    element.value = "";
-  });
-}
-
+// checkin and checkout dates event listners
 document
   .getElementById("checkindate")
   .addEventListener("change", costCalculation);
@@ -52,7 +46,7 @@ let divIDs = [
   "emailDiv",
 ];
 
-//all input ids
+//all input ids (0-6 are the 6 fields)
 let inputElements = document.querySelectorAll("input[id]");
 
 //submit button ( using jquery)
@@ -76,7 +70,6 @@ $("#submit").on("click", function () {
 
     i++;
   }
-
   if (!$("#cost").val()) {
     toastr.error("Cost is not calculated!");
   } else if ($("#cost").val() < 0) {
@@ -86,7 +79,7 @@ $("#submit").on("click", function () {
   }
 });
 
-// for removing the red error realtime
+// for removing the red error realtime after submit is clicked
 let c = 0;
 while (c <= 5) {
   //input id

@@ -1,9 +1,9 @@
-##Bootstraped Booking Form
+## Bootstraped Booking Form
 
 This repository contains a simple HTML webpage that showcases a Bootstrap-based booking form. The form allows users to enter their personal information, contact details, booking preferences, and additional notes. The form is designed to be user-friendly and responsive, ensuring a seamless experience on various devices.
 
-#Technologies Used:
-Bootstrap:
+## Technologies Used:
+# Bootstrap:
 
 - Description: Bootstrap is a popular front-end framework that provides pre-designed components and styles for building responsive web pages.
 - Version: 3.4.1

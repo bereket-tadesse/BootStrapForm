@@ -1,5 +1,4 @@
 function costCalculation() {
-  toastr.success("runnign");
   // checkin and checkout date values
   let checkinString = new Date(document.getElementById("checkindate").value);
   let checkoutString = new Date(document.getElementById("checkoutdate").value);

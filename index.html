@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Booking Form</title>
+    <!-- JS scipt -->
     <script src="script.js" defer></script>
-
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -20,13 +20,26 @@
     ></script>
 
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--tostr JS lib-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+    ></script>
   </head>
 
   <body>
-    <button id="b">test</button>
     <div class="container">
       <div class="row">
         <div class="well">
@@ -48,7 +61,7 @@
                     <label class="control-label col-sm-4" for="usr"
                       >User Name:</label
                     >
-                    <div class="col-sm-8">
+                    <div class="col-sm-8" id="userNameDiv">
                       <input
                         type="text"
                         class="form-control"
@@ -64,11 +77,11 @@
                     <label class="control-label col-sm-4" for="firstname"
                       >First Name:</label
                     >
-                    <div class="col-sm-8">
+                    <div class="col-sm-8" id="firstNameDiv">
                       <input
                         type="text"
                         class="form-control"
-                        id="firstname"
+                        id="firstName"
                         placeholder="Type First Name..."
                       />
                     </div>
@@ -77,14 +90,14 @@
                 <!-- last name-->
                 <form class="from-horizontal">
                   <div class="form-group">
-                    <label for="lasttname" class="control-label col-sm-4"
+                    <label for="lastname" class="control-label col-sm-4"
                       >Last Name:</label
                     >
-                    <div class="col-sm-8">
+                    <div class="col-sm-8" id="lastNameDiv">
                       <input
                         type="text"
                         class="form-control"
-                        id="lasttname"
+                        id="lasttName"
                         placeholder="Type Last Name ... "
                       />
                     </div>
@@ -102,7 +115,7 @@
               <div class="panel-body">
                 <!-- phone -->
                 <form class="from-horizontal">
-                  <div class="input-group">
+                  <div class="input-group" id="phoneDiv">
                     <span class="input-group-addon"
                       ><i class="glyphicon glyphicon-earphone"></i
                     ></span>
@@ -116,7 +129,7 @@
                 </form>
                 <!-- fax-->
                 <form class="from-horizontal">
-                  <div class="input-group">
+                  <div class="input-group" id="faxDiv">
                     <span class="input-group-addon"
                       ><i class="glyphicon glyphicon-print"></i
                     ></span>
@@ -130,7 +143,7 @@
                 </form>
                 <!-- email-->
                 <form class="from-horizontal">
-                  <div class="input-group">
+                  <div class="input-group" id="emailDiv">
                     <span class="input-group-addon"
                       ><i class="glyphicon glyphicon-envelope"></i
                     ></span>
@@ -184,7 +197,6 @@
                           type="date"
                           class="form-control"
                         />
-                        <button type="button" id="shit">heyyyy</button>
                       </div>
                     </form>
                   </div>
@@ -255,6 +267,7 @@
                     rows="24"
                     id="message"
                     placeholder="Type message here..."
+                    value=""
                   ></textarea>
                 </div>
               </form>
@@ -266,7 +279,7 @@
                     type="range"
                     min="0"
                     max="10"
-                    value="5"
+                    value=""
                     step="1"
                     id="range"
                   />
@@ -289,10 +302,10 @@
       </div>
       <!-- first column -->
       <div class="row" align="right">
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary" id="reset">
           <span class="glyphicon glyphicon-erase"></span>Reset
         </button>
-        <button type="button" class="btn btn-success">
+        <button type="button" class="btn btn-success" id="submit">
           <span class="glyphicon glyphicon-send"></span>Submit
         </button>
       </div>

@@ -1,13 +1,13 @@
 # Bootstraped Booking Form
 
-This repository contains a simple HTML webpage that showcases a Bootstrap-based booking form. The form allows users to enter their personal information, contact details, booking preferences, and additional notes. The form is designed to be user-friendly and responsive, ensuring a seamless experience on various devices.
+This repository contains a simple HTML webpage that has a Bootstrap-based booking form. The form allows users to enter their personal information, contact details, booking preferences, and additional notes.
 
 # Technologies Used:
+
 ## Bootstrap:
 
 - pre-designed components and styles
 - Version: 3.4.1
-
 
 ## Moment.js:
 
@@ -23,4 +23,3 @@ This repository contains a simple HTML webpage that showcases a Bootstrap-based 
 
 - displaying toast notifications on web pages.
 - Version: Latest
-

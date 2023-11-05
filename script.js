@@ -82,7 +82,7 @@ $("#submit").on("click", function () {
   } else if ($("#cost").val() < 0) {
     toastr.error("Cost is negative!");
   } else if (testPassed) {
-    toastr.success("Sibmitted Succefully!" + "😀");
+    toastr.success("Submitted Succefully!" + "😀");
   }
 });
 

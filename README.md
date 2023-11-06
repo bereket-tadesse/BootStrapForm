@@ -12,7 +12,7 @@ This repository contains a simple HTML webpage that has a Bootstrap-based bookin
 ## Moment.js:
 
 - parsing, validating, manipulating, and formatting dates.
-- Version: 2.22.2
+- Version: 2.22.2.
 
 ## jQuery:
 

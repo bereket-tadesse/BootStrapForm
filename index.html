@@ -37,6 +37,12 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
     ></script>
+
+    <!--fontawesome 4.7 used another similar link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
   </head>
 
   <body>
@@ -58,14 +64,14 @@
                 <!-- user name-->
                 <form class="from-horizontal">
                   <div class="form-group">
-                    <label class="control-label col-sm-4" for="usr"
+                    <label class="control-label col-sm-4" for="userName"
                       >User Name:</label
                     >
                     <div class="col-sm-8" id="userNameDiv">
                       <input
                         type="text"
                         class="form-control"
-                        id="usr"
+                        id="userName"
                         placeholder="Type User Name..."
                       />
                     </div>
@@ -97,7 +103,7 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="lasttName"
+                        id="lastName"
                         placeholder="Type Last Name ... "
                       />
                     </div>
@@ -303,10 +309,10 @@
       <!-- first column -->
       <div class="row" align="right">
         <button type="button" class="btn btn-primary" id="reset">
-          <span class="glyphicon glyphicon-erase"></span>Reset
+          <i class="fa fa-eraser" aria-hidden="true"></i> Reset
         </button>
         <button type="button" class="btn btn-success" id="submit">
-          <span class="glyphicon glyphicon-send"></span>Submit
+          <i class="fa fa-paper-plane" aria-hidden="true"></i> Submit
         </button>
       </div>
     </div>

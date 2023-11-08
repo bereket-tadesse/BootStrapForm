@@ -61,7 +61,7 @@ $("#submit").on("click", function () {
 
     let inputValue = $(id).val();
     if (!inputValue) {
-      toastr.error("Enter: " + id);
+      toastr.error("Enter " + id.slice(1));
       $(classid).addClass("has-error");
       testPassed = false;
     } else {

@@ -1,4 +1,5 @@
 # Bootstraped Booking Form
+![image](https://github.com/bereket-tadesse/BootStrapForm/assets/84309246/4ec673ef-5cbe-4b86-9bca-c8056a819efd)
 
 This repository contains a simple HTML webpage that has a Bootstrap-based booking form. The form allows users to enter their personal information, contact details, booking preferences, and additional notes.
 

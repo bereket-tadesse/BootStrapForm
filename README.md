@@ -24,3 +24,5 @@ This repository contains a simple HTML webpage that has a Bootstrap-based bookin
 
 - displaying toast notifications on web pages.
 - Version: Latest
+
+Test the app here on this link: https://bereket-tadesse.github.io/BootStrapForm/
